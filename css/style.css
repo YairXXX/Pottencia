@@ -1,0 +1,97 @@
+.logo {
+    width: 150px !important;
+    border-radius: 100%;
+}
+h1, h2, h3, h4, h5 ,h5{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #9FBE8E;
+}
+h1{
+    font-size: 50px;
+}
+p{
+    font-family: "Open Sans", sans-serif;
+}
+.nav-link{
+    font-family: "Open Sans", sans-serif !important;
+    color: #ffffff !important;
+    font-size: 25px;
+}
+span{
+    font-weight: 800;
+}
+/* Se aplica para la barra de navegación */
+@media (min-width: 992px){
+    .nav-link {
+        position: relative;
+        color: #000; 
+        transition: color 0.3s ease;
+    }
+    .nav-link:hover {
+        color: #ffffff; 
+    }
+    .nav-link::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #ffffff; 
+        transition: width 0.3s;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+    }
+    .nav-link-icon{
+        transition: color 0.3s ease;
+    }
+    .nav-link-icon::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #AAB396; 
+        transition: width 0.3s;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+    }
+    .nav-link:hover::after {
+        width: 100%; 
+    }
+}
+@media (max-width: 992px){
+    h1{
+        font-size: 30px;
+    }
+}
+.nav-link.active {
+    color: #FFFF !important;
+    font-weight: bold;
+}
+.nav-link.active::after {
+    width: 100%;
+}       
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    display: none; 
+}
+.navbar-toggler[aria-expanded="true"]::before {
+    content: "X"; 
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+.navbar-toggler {
+    width: 50px;
+    height: 50px;
+    padding: 0px !important;
+    border-radius: 100% !important;
+    border-color: #ffffff;
+    border-width: 3px;
+}
+.navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+    filter: invert(1) brightness(2);
+}

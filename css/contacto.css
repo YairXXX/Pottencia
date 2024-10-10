@@ -1,0 +1,31 @@
+/* Se aplica en contactanos */
+#formulario-contacto{
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 15px 0px #FF9800;
+    border-radius: 20px;
+}
+.columna-cuestionario{
+    margin: 25px;
+}
+.form-control{
+    border: 0.5px solid #FF9800;
+}
+.input-group-text{
+    border: 0.5px solid #FF9800;
+}
+.btn_cuestionario{
+    color: #FFFFFF;
+    background-color: #9fbe8e;
+}
+.error-text{
+    color: red;
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+    #texto-contacto{
+        margin: 0px !important;
+        margin-top: 15px !important;
+        width: 100%;
+    }
+}
